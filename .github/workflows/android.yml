@@ -18,7 +18,7 @@ jobs:
         cache: gradle
     - run: |
         chmod +x ./gradlew
-        ./gradlew :module:assembleRelease
+        ./gradlew :RatelModule:assembleRelease
     - uses: actions/upload-artifact@v3
       with:
         name: manager
