@@ -18,9 +18,9 @@ jobs:
         cache: gradle
     - run: |
         chmod +x ./gradlew
-        ./gradlew :RatelModule:assembleRelease
+        ./gradlew build
     - uses: actions/upload-artifact@v3
       with:
-        name: manager
+        name: app-release
         path: app/build/outputs/apk/release/*.apk
         
